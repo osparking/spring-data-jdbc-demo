@@ -29,13 +29,11 @@ public class SdjdbcDemoApplication {
 			game.setPlayerBlack("A strong player");
 
 			ChessMove move1white = new ChessMove();
-			move1white.setMoveNumber(1);
 			move1white.setColor(MoveColor.WHITE);
 			move1white.setMove("e4");
 			game.getMoves().add(move1white);
 
 			ChessMove move1Black = new ChessMove();
-			move1Black.setMoveNumber(2);
 			move1Black.setColor(MoveColor.BLACK);
 			move1Black.setMove("e5");
 			game.getMoves().add(move1Black);
