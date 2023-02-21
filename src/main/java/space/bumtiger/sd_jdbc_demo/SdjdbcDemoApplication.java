@@ -23,7 +23,7 @@ public class SdjdbcDemoApplication {
 	}
 
 	@Bean
-	public CommandLineRunner commandLineRunner(ApplicationContext ctx,
+	CommandLineRunner commandLineRunner(ApplicationContext ctx,
 			ChessGameRepository gameRepo) {
 		return args -> {
 
@@ -43,7 +43,7 @@ public class SdjdbcDemoApplication {
 			game.getMoves().add(move1Black);
 
 			gameRepo.save(game);
-			
+
 			List<ChessGame> games = gameRepo.findByPlayerBlack("A weak player");
 			games.forEach(g -> log.info(g.toString()));
 		};
