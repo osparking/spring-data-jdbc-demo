@@ -6,3 +6,12 @@ CREATE TABLE `chess_game` (
   `player_black` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- `spring-data-jdbc`.chess_move definition
+
+CREATE TABLE `chess_move` (
+  `move_number` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `color` varchar(20) DEFAULT NULL,
+  `move` varchar(10) DEFAULT NULL,
+  PRIMARY KEY (`move_number`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
