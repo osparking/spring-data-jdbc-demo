@@ -13,5 +13,7 @@ CREATE TABLE `chess_move` (
   `move_number` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `color` varchar(20) DEFAULT NULL,
   `move` varchar(10) DEFAULT NULL,
+  `chess_game` int(10) unsigned DEFAULT NULL,
+  `chess_game_key` smallint(5) unsigned DEFAULT NULL,
   PRIMARY KEY (`move_number`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
