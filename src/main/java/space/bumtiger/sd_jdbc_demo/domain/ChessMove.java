@@ -5,7 +5,7 @@ import lombok.Data;
 @Data
 public class ChessMove {
 	public enum MoveColor {
-		WHITE, BLACK, BLUE, GREEN, PINK
+		WHITE, BLACK
 	}
 
 	private Integer moveNumber;
