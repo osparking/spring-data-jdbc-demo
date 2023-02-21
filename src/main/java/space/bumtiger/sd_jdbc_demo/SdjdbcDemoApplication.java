@@ -35,7 +35,7 @@ public class SdjdbcDemoApplication {
 			game.getMoves().add(move1white);
 
 			ChessMove move1Black = new ChessMove();
-			move1Black.setMoveNumber(1);
+			move1Black.setMoveNumber(2);
 			move1Black.setColor(MoveColor.BLACK);
 			move1Black.setMove("e5");
 			game.getMoves().add(move1Black);
