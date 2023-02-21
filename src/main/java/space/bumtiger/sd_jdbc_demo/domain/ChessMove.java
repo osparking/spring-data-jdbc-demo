@@ -1,5 +1,7 @@
 package space.bumtiger.sd_jdbc_demo.domain;
 
+import org.springframework.data.annotation.Id;
+
 import lombok.Data;
 
 @Data
@@ -8,6 +10,7 @@ public class ChessMove {
 		WHITE, BLACK
 	}
 
+	@Id
 	private Integer moveNumber;
 
 	private MoveColor color;
