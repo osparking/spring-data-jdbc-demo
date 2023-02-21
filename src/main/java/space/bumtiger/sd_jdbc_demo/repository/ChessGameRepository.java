@@ -9,6 +9,6 @@ import space.bumtiger.sd_jdbc_demo.domain.ChessGame;
 // @formatter:off
 public interface ChessGameRepository 
 				extends CrudRepository<ChessGame, Long> {
-	List<ChessGame> findByPlayBlack(String playerBlack);
+	List<ChessGame> findByPlayerBlack(String playerBlack);
 // @formatter:on
 }
